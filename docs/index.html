@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Go Happily — Friendly Motivational Companion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>🙂 Go Happily</h1>
+        <p class="tag">A friendly, positivity-focused chat companion (static)</p>
+      </header>
+
+      <section class="controls">
+        <label for="responseType">Response Type</label>
+        <select id="responseType">
+          <option>Support</option>
+          <option>Quote</option>
+          <option>Grounding</option>
+          <option>Reframe</option>
+          <option>Practical Tip</option>
+        </select>
+
+        <label for="userMsg">What's on your mind?</label>
+        <textarea id="userMsg" placeholder="Type a few lines..." rows="5"></textarea>
+
+        <div class="buttons">
+          <button id="sendBtn">Send</button>
+          <button id="groundBtn">Grounding Exercise</button>
+          <button id="clearBtn">Clear</button>
+          <button id="downloadBtn">Download</button>
+        </div>
+      </section>
+
+      <section id="conversation" class="conversation" aria-live="polite"></section>
+
+      <footer>
+        <small>Frameworks: validation, grounding (5-4-3-2-1), simple CBT reframes, tiny-step motivation.</small>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
